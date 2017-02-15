@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F97C7301E54E95700F5B8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C72F1E54E95700F5B8C8 /* AppDelegate.swift */; };
+		3F97C7371E54E95700F5B8C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7361E54E95700F5B8C8 /* Assets.xcassets */; };
+		3F97C73A1E54E95700F5B8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7381E54E95700F5B8C8 /* LaunchScreen.storyboard */; };
+		3F97C7711E54ED8100F5B8C8 /* banheiro_direita.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7671E54ED8100F5B8C8 /* banheiro_direita.mp3 */; };
+		3F97C7721E54ED8100F5B8C8 /* banheiro_esquerda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7681E54ED8100F5B8C8 /* banheiro_esquerda.mp3 */; };
+		3F97C7731E54ED8100F5B8C8 /* banheiro_frente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7691E54ED8100F5B8C8 /* banheiro_frente.mp3 */; };
+		3F97C7741E54ED8100F5B8C8 /* dcomp_frente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76A1E54ED8100F5B8C8 /* dcomp_frente.mp3 */; };
+		3F97C7751E54ED8100F5B8C8 /* escada_2_dcomp_direita.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76B1E54ED8100F5B8C8 /* escada_2_dcomp_direita.mp3 */; };
+		3F97C7761E54ED8100F5B8C8 /* escada_2_dcomp_esquerda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76C1E54ED8100F5B8C8 /* escada_2_dcomp_esquerda.mp3 */; };
+		3F97C7771E54ED8100F5B8C8 /* escada_2_dcomp_frente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76D1E54ED8100F5B8C8 /* escada_2_dcomp_frente.mp3 */; };
+		3F97C7781E54ED8100F5B8C8 /* secretaria_dcomp_direita.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76E1E54ED8100F5B8C8 /* secretaria_dcomp_direita.mp3 */; };
+		3F97C7791E54ED8100F5B8C8 /* secretaria_dcomp_esquerda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C76F1E54ED8100F5B8C8 /* secretaria_dcomp_esquerda.mp3 */; };
+		3F97C77A1E54ED8100F5B8C8 /* secretaria_dcomp_frente.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C7701E54ED8100F5B8C8 /* secretaria_dcomp_frente.mp3 */; };
+		3F97C77C1E54ED8F00F5B8C8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C77B1E54ED8F00F5B8C8 /* Info.plist */; };
+		3F97C77E1E54ED9D00F5B8C8 /* MyBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C77D1E54ED9D00F5B8C8 /* MyBeacon.swift */; };
+		3F97C7811E54EDCA00F5B8C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F97C77F1E54EDCA00F5B8C8 /* Main.storyboard */; };
+		3F97C7861E54EE0600F5B8C8 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7841E54EE0600F5B8C8 /* AudioService.swift */; };
+		3F97C7871E54EE0600F5B8C8 /* BeaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7851E54EE0600F5B8C8 /* BeaconService.swift */; };
+		3F97C78A1E54EE1F00F5B8C8 /* BaggageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */; };
+		3F97C78B1E54EE1F00F5B8C8 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F97C72C1E54E95700F5B8C8 /* InSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F97C72F1E54E95700F5B8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F97C7361E54E95700F5B8C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F97C7391E54E95700F5B8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F97C7671E54ED8100F5B8C8 /* banheiro_direita.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banheiro_direita.mp3; sourceTree = "<group>"; };
+		3F97C7681E54ED8100F5B8C8 /* banheiro_esquerda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banheiro_esquerda.mp3; sourceTree = "<group>"; };
+		3F97C7691E54ED8100F5B8C8 /* banheiro_frente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = banheiro_frente.mp3; sourceTree = "<group>"; };
+		3F97C76A1E54ED8100F5B8C8 /* dcomp_frente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dcomp_frente.mp3; sourceTree = "<group>"; };
+		3F97C76B1E54ED8100F5B8C8 /* escada_2_dcomp_direita.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = escada_2_dcomp_direita.mp3; sourceTree = "<group>"; };
+		3F97C76C1E54ED8100F5B8C8 /* escada_2_dcomp_esquerda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = escada_2_dcomp_esquerda.mp3; sourceTree = "<group>"; };
+		3F97C76D1E54ED8100F5B8C8 /* escada_2_dcomp_frente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = escada_2_dcomp_frente.mp3; sourceTree = "<group>"; };
+		3F97C76E1E54ED8100F5B8C8 /* secretaria_dcomp_direita.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = secretaria_dcomp_direita.mp3; sourceTree = "<group>"; };
+		3F97C76F1E54ED8100F5B8C8 /* secretaria_dcomp_esquerda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = secretaria_dcomp_esquerda.mp3; sourceTree = "<group>"; };
+		3F97C7701E54ED8100F5B8C8 /* secretaria_dcomp_frente.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = secretaria_dcomp_frente.mp3; sourceTree = "<group>"; };
+		3F97C77B1E54ED8F00F5B8C8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F97C77D1E54ED9D00F5B8C8 /* MyBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBeacon.swift; sourceTree = "<group>"; };
+		3F97C7801E54EDCA00F5B8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InSight/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F97C7841E54EE0600F5B8C8 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		3F97C7851E54EE0600F5B8C8 /* BeaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconService.swift; sourceTree = "<group>"; };
+		3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaggageViewController.swift; sourceTree = "<group>"; };
+		3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F97C7291E54E95700F5B8C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F97C7231E54E95700F5B8C8 = {
+			isa = PBXGroup;
+			children = (
+				3F97C72E1E54E95700F5B8C8 /* InSight */,
+				3F97C72D1E54E95700F5B8C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F97C72D1E54E95700F5B8C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C72C1E54E95700F5B8C8 /* InSight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F97C72E1E54E95700F5B8C8 /* InSight */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C7631E54EA0500F5B8C8 /* Models */,
+				3F97C7621E54E9F500F5B8C8 /* Services */,
+				3F97C7611E54E9D800F5B8C8 /* Music */,
+				3F97C72F1E54E95700F5B8C8 /* AppDelegate.swift */,
+				3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */,
+				3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */,
+				3F97C77F1E54EDCA00F5B8C8 /* Main.storyboard */,
+				3F97C7361E54E95700F5B8C8 /* Assets.xcassets */,
+				3F97C7381E54E95700F5B8C8 /* LaunchScreen.storyboard */,
+				3F97C77B1E54ED8F00F5B8C8 /* Info.plist */,
+			);
+			path = InSight;
+			sourceTree = "<group>";
+		};
+		3F97C7611E54E9D800F5B8C8 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C7671E54ED8100F5B8C8 /* banheiro_direita.mp3 */,
+				3F97C7681E54ED8100F5B8C8 /* banheiro_esquerda.mp3 */,
+				3F97C7691E54ED8100F5B8C8 /* banheiro_frente.mp3 */,
+				3F97C76A1E54ED8100F5B8C8 /* dcomp_frente.mp3 */,
+				3F97C76B1E54ED8100F5B8C8 /* escada_2_dcomp_direita.mp3 */,
+				3F97C76C1E54ED8100F5B8C8 /* escada_2_dcomp_esquerda.mp3 */,
+				3F97C76D1E54ED8100F5B8C8 /* escada_2_dcomp_frente.mp3 */,
+				3F97C76E1E54ED8100F5B8C8 /* secretaria_dcomp_direita.mp3 */,
+				3F97C76F1E54ED8100F5B8C8 /* secretaria_dcomp_esquerda.mp3 */,
+				3F97C7701E54ED8100F5B8C8 /* secretaria_dcomp_frente.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		3F97C7621E54E9F500F5B8C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C7841E54EE0600F5B8C8 /* AudioService.swift */,
+				3F97C7851E54EE0600F5B8C8 /* BeaconService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3F97C7631E54EA0500F5B8C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F97C77D1E54ED9D00F5B8C8 /* MyBeacon.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F97C72B1E54E95700F5B8C8 /* InSight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F97C73E1E54E95700F5B8C8 /* Build configuration list for PBXNativeTarget "InSight" */;
+			buildPhases = (
+				3F97C7281E54E95700F5B8C8 /* Sources */,
+				3F97C7291E54E95700F5B8C8 /* Frameworks */,
+				3F97C72A1E54E95700F5B8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InSight;
+			productName = InSight;
+			productReference = 3F97C72C1E54E95700F5B8C8 /* InSight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F97C7241E54E95700F5B8C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hackteam;
+				TargetAttributes = {
+					3F97C72B1E54E95700F5B8C8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6KKEBCN4TY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F97C7271E54E95700F5B8C8 /* Build configuration list for PBXProject "InSight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F97C7231E54E95700F5B8C8;
+			productRefGroup = 3F97C72D1E54E95700F5B8C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F97C72B1E54E95700F5B8C8 /* InSight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F97C72A1E54E95700F5B8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97C7721E54ED8100F5B8C8 /* banheiro_esquerda.mp3 in Resources */,
+				3F97C73A1E54E95700F5B8C8 /* LaunchScreen.storyboard in Resources */,
+				3F97C7771E54ED8100F5B8C8 /* escada_2_dcomp_frente.mp3 in Resources */,
+				3F97C7781E54ED8100F5B8C8 /* secretaria_dcomp_direita.mp3 in Resources */,
+				3F97C7731E54ED8100F5B8C8 /* banheiro_frente.mp3 in Resources */,
+				3F97C77A1E54ED8100F5B8C8 /* secretaria_dcomp_frente.mp3 in Resources */,
+				3F97C77C1E54ED8F00F5B8C8 /* Info.plist in Resources */,
+				3F97C7811E54EDCA00F5B8C8 /* Main.storyboard in Resources */,
+				3F97C7761E54ED8100F5B8C8 /* escada_2_dcomp_esquerda.mp3 in Resources */,
+				3F97C7371E54E95700F5B8C8 /* Assets.xcassets in Resources */,
+				3F97C7751E54ED8100F5B8C8 /* escada_2_dcomp_direita.mp3 in Resources */,
+				3F97C7791E54ED8100F5B8C8 /* secretaria_dcomp_esquerda.mp3 in Resources */,
+				3F97C7741E54ED8100F5B8C8 /* dcomp_frente.mp3 in Resources */,
+				3F97C7711E54ED8100F5B8C8 /* banheiro_direita.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F97C7281E54E95700F5B8C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F97C7301E54E95700F5B8C8 /* AppDelegate.swift in Sources */,
+				3F97C77E1E54ED9D00F5B8C8 /* MyBeacon.swift in Sources */,
+				3F97C7861E54EE0600F5B8C8 /* AudioService.swift in Sources */,
+				3F97C78B1E54EE1F00F5B8C8 /* BeaconManager.swift in Sources */,
+				3F97C78A1E54EE1F00F5B8C8 /* BaggageViewController.swift in Sources */,
+				3F97C7871E54EE0600F5B8C8 /* BeaconService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F97C7381E54E95700F5B8C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F97C7391E54E95700F5B8C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F97C77F1E54EDCA00F5B8C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F97C7801E54EDCA00F5B8C8 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F97C73C1E54E95700F5B8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F97C73D1E54E95700F5B8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F97C73F1E54E95700F5B8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6KKEBCN4TY;
+				INFOPLIST_FILE = InSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hackteam.InSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F97C7401E54E95700F5B8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6KKEBCN4TY;
+				INFOPLIST_FILE = InSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.hackteam.InSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F97C7271E54E95700F5B8C8 /* Build configuration list for PBXProject "InSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F97C73C1E54E95700F5B8C8 /* Debug */,
+				3F97C73D1E54E95700F5B8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F97C73E1E54E95700F5B8C8 /* Build configuration list for PBXNativeTarget "InSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F97C73F1E54E95700F5B8C8 /* Debug */,
+				3F97C7401E54E95700F5B8C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F97C7241E54E95700F5B8C8 /* Project object */;
+}
