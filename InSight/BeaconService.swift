@@ -14,15 +14,15 @@ class BeaconSevice {
     private static let beacons:[MyBeacon] = [
         MyBeacon(minorId: 42295,
                    locationName: "Banheiro",
-                   position: "Leste",
+                   position: "oeste",
                    locationVoice: ["esquerda": "banheiro_esquerda", "direita": "banheiro_direita", "frente": "banheiro_frente"]),
         MyBeacon(minorId: 5953,
                    locationName: "Escada",
-                   position: "Oeste",
+                   position: "norte",
                    locationVoice: ["esquerda": "escada_2_dcomp_esquerda", "direita": "escada_2_dcomp_direita", "frente": "escada_2_dcomp_frente"]),
         MyBeacon(minorId: 34186,
                    locationName: "Secretaria",
-                   position: "Norte",
+                   position: "leste",
                    locationVoice: ["esquerda": "secretaria_dcomp_esquerda", "direita": "secretaria_dcomp_direita", "frente": "secretaria_dcomp_frente"]),
     ]
     
@@ -38,6 +38,9 @@ class BeaconSevice {
         return self.beacons.first(where: { (val) -> Bool in
             return val.minorId == minorId
         })
+    }
+    static func getBeacons() -> [MyBeacon]{
+        return beacons
     }
     
 }

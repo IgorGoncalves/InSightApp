@@ -13,11 +13,14 @@ class MyBeacon {
     let minorId: Int
     let position: String
     let locationVoice: [String: String]!
+    var direction: String
+    
     init(minorId: Int, locationName: String, position: String, locationVoice: [String: String]!){
         self.locationName = locationName
         self.position = position
         self.minorId = minorId
         self.locationVoice = locationVoice
+        self.direction = ""
     }
     
 }

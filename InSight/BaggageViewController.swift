@@ -9,11 +9,21 @@
 import UIKit
 import CoreLocation
 
-class BaggageViewController: UIViewController, BeaconManagerDelegate {
+class BaggageViewController: UIViewController, BeaconManagerDelegate, CLLocationManagerDelegate {
     
     
-    @IBOutlet weak var proximityLabel: UILabel!
+    //@IBOutlet weak var proximityLabel: UILabel!
 
+    @IBOutlet weak var frenteLabel: UILabel!
+    @IBOutlet weak var esquerdaLabel: UILabel!
+    @IBOutlet weak var direitaLabel: UILabel!
+    @IBOutlet weak var trasLabel: UILabel!
+    
+    @IBOutlet weak var direitaButton: UIButton!
+    @IBOutlet weak var frenteButton: UIButton!
+    @IBOutlet weak var esquerdaButton: UIButton!
+    @IBOutlet weak var trasButton: UIButton!
+    
     
     let suitcaseTopFar:CGFloat = 20.0
     var suitcaseTopNear:CGFloat!
@@ -23,13 +33,22 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate {
     let velocity = 0.5
     
     var beaconManager:BeaconManager!
+    var locationManager = CLLocationManager()
+    let beacons = BeaconSevice.getBeacons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        proximityLabel.text = ""
+        //proximityLabel.text = ""
     
         suitcaseTopNear = (view.frame.height / 3.0) - verticalCorrection
         suitcaseTopImmediate = (view.frame.height / 2.0) - verticalCorrection
+        
+        // Do any additional setup after loading the view.
+        self.locationManager = CLLocationManager()
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingHeading()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,6 +100,40 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate {
     
     internal func beaconManager(_ manager: BeaconManager, didFindBeacons beacons: Array<CLBeacon>, inRegion region: CLBeaconRegion) {
         //print("*** BEACONS FOUND: \(beacons)")
+  /*
+        for beacon in beacons {
+            if let bea: MyBeacon = BeaconSevice.getLocationByBeacon(minorId: beacon.minor.intValue) {
+                proximityLabel.text = ""
+                
+                switch(beacon.proximity){
+                case .unknown:
+                    proximityLabel.text = "\(bea.locationName) unknown"
+                case .far:
+                    proximityLabel.text = "\(bea.locationName) far"
+                
+                case .near:
+                    proximityLabel.text = " \(bea.locationName) near"
+                    co = true
+                case .immediate:
+                    //proximityLabel.text = "immediate"
+                 //
+                        self.proximityLabel.text = bea.locationName
+                        if let audio: [String: String] =  bea.locationVoice {
+                            
+                                AudioService.Play(audio: audio["esquerda"]!)
+                                co = false
+                            
+                        }
+                    
+                    
+                
+                }
+            //    print(beacon)
+            }
+        }
+        return
+*/
+        
     }
     
     var co: Bool = false
@@ -90,23 +143,25 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate {
         //print("*** CLOSEST BEACON: \(beacon)")
         
         if (beacon.major.intValue != beaconManager.beaconMajor) || (beacon.minor.intValue != beaconManager.beaconMinor) {
-            proximityLabel.text = ""
+            //proximityLabel.text = ""
             switch(beacon.proximity){
-            case .unknown:
-                proximityLabel.text = "unknown"
-            case .far:
-                proximityLabel.text = "far"
+            case .unknown: break
+             //   proximityLabel.text = "unknown"
+            case .far: break
+              //  proximityLabel.text = "far"
                 
             case .near:
-                proximityLabel.text = "near"
+             //   proximityLabel.text = "near"
                 co = true
             case .immediate:
                 //proximityLabel.text = "immediate"
                 if let bea: MyBeacon = BeaconSevice.getLocationByBeacon(minorId: beacon.minor.intValue) {
-                    self.proximityLabel.text = bea.locationName
+                 //   self.proximityLabel.text = bea.locationName
                     if let audio: [String: String] =  bea.locationVoice {
                         if(co){
-                            AudioService.Play(audio: audio["esquerda"]!)
+                            AudioService.Play(audio: audio[bea.direction]!)
+                            changeInterface(d:bea.direction,l: bea.locationName)
+                            
                             co = false
                         }
                     }
@@ -114,13 +169,93 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate {
                 }
                 
             }
-            print(beacon)
-            
+        //    print(beacon)
+          //*/
             return
         }
-
-        
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        
+        print(newHeading.magneticHeading)
+        //self.proximityLabel.text = String(format: "%.2f", newHeading.magneticHeading)
+        for beacon in self.beacons {
+            print ("dsads")
+            positionToBeacon(beacon: beacon, posicaoTerra: newHeading.magneticHeading)
+        }
+        
+    }
+
+    func changeInterface(d: String, l:String){
+        switch d {
+        case "esquerda":
+            esquerdaLabel.text = l
+            direitaLabel.text = ""
+            frenteLabel.text = ""
+            trasLabel.text = ""
+        case "direita":
+            direitaLabel.text = l
+            esquerdaLabel.text = ""
+            frenteLabel.text = ""
+            trasLabel.text = ""
+        case "frente":
+            frenteLabel.text = l
+            direitaLabel.text = ""
+            esquerdaLabel.text = ""
+            trasLabel.text = ""
+        default:
+            print("ferrou")
+            //posicao = posicaoTerra
+        }
+    
+    }
+    func positionToBeacon(beacon: MyBeacon, posicaoTerra: Double) {
+        
+        var posicao:Double
+        switch beacon.position.lowercased() {
+        case "norte":
+            posicao = posicaoTerra
+        case "leste":
+            posicao =  (posicaoTerra + 90)
+        case "sul":
+            posicao = (posicaoTerra + 180)
+        case "oeste":
+            posicao = (posicaoTerra + 270)
+        default:
+            print("norte")
+            posicao = posicaoTerra
+        }
+        
+        // Indica posição relativa à posição do iBeacon
+        if posicao > 360 {
+            posicao = posicao - 360
+        }
+        switch posicao {
+        case 330.1...359.9, 0...30:
+      //      frenteButton.alpha = 1
+            print("\(beacon.locationName) De Frente pro \(beacon.position) - id \(beacon.minorId)")
+            beacon.direction =  "frente"
+        case 30.1...150:
+        //    esquerdaButton.alpha = 1
+            print("O \(beacon.locationName) está a sua Esquerda ")
+            beacon.direction =  "esquerda"
+        case 151.6...210:
+          //  trasButton.alpha = 1
+            print("O \(beacon.locationName) está Atrás")
+            //beacon.direction =  "atras"
+        case 210.1...330:
+            //direitaButton.alpha = 1
+            print("O \(beacon.locationName) está a sua Direita ")
+            beacon.direction =  "direita"
+        default:
+            print("Perdido")
+            //beacon.direction =  "perdido"
+        }
+    }
+    
+
     
 }
+
+
+

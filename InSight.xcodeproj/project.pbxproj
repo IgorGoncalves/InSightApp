@@ -27,6 +27,11 @@
 		3F97C7871E54EE0600F5B8C8 /* BeaconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7851E54EE0600F5B8C8 /* BeaconService.swift */; };
 		3F97C78A1E54EE1F00F5B8C8 /* BaggageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */; };
 		3F97C78B1E54EE1F00F5B8C8 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */; };
+		3F9CC7BD1E56196A009EC01F /* Historico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CC7B91E56196A009EC01F /* Historico.swift */; };
+		3F9CC7BE1E56196A009EC01F /* HistoricoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CC7BA1E56196A009EC01F /* HistoricoDAO.swift */; };
+		3F9CC7BF1E56196A009EC01F /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CC7BB1E56196A009EC01F /* HistoricoTableViewCell.swift */; };
+		3F9CC7C01E56196A009EC01F /* HistoricoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CC7BC1E56196A009EC01F /* HistoricoTableViewController.swift */; };
+		3F9CC7C21E563252009EC01F /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CC7C11E563252009EC01F /* CompassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		3F97C7851E54EE0600F5B8C8 /* BeaconService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconService.swift; sourceTree = "<group>"; };
 		3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaggageViewController.swift; sourceTree = "<group>"; };
 		3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		3F9CC7B91E56196A009EC01F /* Historico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Historico.swift; sourceTree = "<group>"; };
+		3F9CC7BA1E56196A009EC01F /* HistoricoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoDAO.swift; sourceTree = "<group>"; };
+		3F9CC7BB1E56196A009EC01F /* HistoricoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewCell.swift; sourceTree = "<group>"; };
+		3F9CC7BC1E56196A009EC01F /* HistoricoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewController.swift; sourceTree = "<group>"; };
+		3F9CC7C11E563252009EC01F /* CompassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompassViewController.swift; path = ../../../../Downloads/CompassViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +97,13 @@
 				3F97C7621E54E9F500F5B8C8 /* Services */,
 				3F97C7611E54E9D800F5B8C8 /* Music */,
 				3F97C72F1E54E95700F5B8C8 /* AppDelegate.swift */,
+				3F9CC7B91E56196A009EC01F /* Historico.swift */,
+				3F9CC7BA1E56196A009EC01F /* HistoricoDAO.swift */,
+				3F9CC7BB1E56196A009EC01F /* HistoricoTableViewCell.swift */,
+				3F9CC7BC1E56196A009EC01F /* HistoricoTableViewController.swift */,
 				3F97C7881E54EE1F00F5B8C8 /* BaggageViewController.swift */,
 				3F97C7891E54EE1F00F5B8C8 /* BeaconManager.swift */,
+				3F9CC7C11E563252009EC01F /* CompassViewController.swift */,
 				3F97C77F1E54EDCA00F5B8C8 /* Main.storyboard */,
 				3F97C7361E54E95700F5B8C8 /* Assets.xcassets */,
 				3F97C7381E54E95700F5B8C8 /* LaunchScreen.storyboard */,
@@ -218,8 +233,13 @@
 				3F97C7301E54E95700F5B8C8 /* AppDelegate.swift in Sources */,
 				3F97C77E1E54ED9D00F5B8C8 /* MyBeacon.swift in Sources */,
 				3F97C7861E54EE0600F5B8C8 /* AudioService.swift in Sources */,
+				3F9CC7C21E563252009EC01F /* CompassViewController.swift in Sources */,
 				3F97C78B1E54EE1F00F5B8C8 /* BeaconManager.swift in Sources */,
 				3F97C78A1E54EE1F00F5B8C8 /* BaggageViewController.swift in Sources */,
+				3F9CC7BF1E56196A009EC01F /* HistoricoTableViewCell.swift in Sources */,
+				3F9CC7BE1E56196A009EC01F /* HistoricoDAO.swift in Sources */,
+				3F9CC7BD1E56196A009EC01F /* Historico.swift in Sources */,
+				3F9CC7C01E56196A009EC01F /* HistoricoTableViewController.swift in Sources */,
 				3F97C7871E54EE0600F5B8C8 /* BeaconService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

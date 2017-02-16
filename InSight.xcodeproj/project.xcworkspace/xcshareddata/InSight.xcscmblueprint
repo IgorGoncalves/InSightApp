@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AFA70F7F0D2E55144767C918B1E8EB1DE29812A5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AFA70F7F0D2E55144767C918B1E8EB1DE29812A5" : 9223372036854775807,
+    "8446AAF111168416457E565C6F6C409B7D623F7A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "59292FE7-B0CE-4A55-A191-15BA946859A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AFA70F7F0D2E55144767C918B1E8EB1DE29812A5" : "InSight\/",
+    "8446AAF111168416457E565C6F6C409B7D623F7A" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InSight",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "InSight.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IgorGoncalves\/br.igorgoncalves.cursoswift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8446AAF111168416457E565C6F6C409B7D623F7A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IgorGoncalves\/InSightApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AFA70F7F0D2E55144767C918B1E8EB1DE29812A5"
+    }
+  ]
+}
