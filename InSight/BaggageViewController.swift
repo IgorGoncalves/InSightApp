@@ -35,6 +35,7 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate, CLLocation
     var beaconManager:BeaconManager!
     var locationManager = CLLocationManager()
     let beacons = BeaconSevice.getBeacons()
+    var beaconAtual:MyBeacon =  MyBeacon(minorId:0, locationName:"", position: "", locationVoice: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,28 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate, CLLocation
     override var preferredStatusBarStyle : UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
+    
+    
+    @IBAction func esquerdaClick(_ sender: Any){
+        if(self.beaconAtual.direction == "esquerda"){
+            AudioService.Play(audio: self.beaconAtual.locationVoice[self.beaconAtual.direction]!)
+            
+        }
+    }
+    @IBAction func direitaClick(_ sender: Any) {
+        if(self.beaconAtual.direction == "direita"){
+            AudioService.Play(audio: self.beaconAtual.locationVoice[self.beaconAtual.direction]!)
+
+        }
+    }
+    
+    @IBAction func playAudio(_ sender: Any) {
+        if(self.beaconAtual.direction == "frente"){
+        AudioService.Play(audio: self.beaconAtual.locationVoice[self.beaconAtual.direction]!)
+        }
+    }
+    
+    
     
     
     // MARK: - BeaconManagerDelegate methods
@@ -147,26 +170,28 @@ class BaggageViewController: UIViewController, BeaconManagerDelegate, CLLocation
             switch(beacon.proximity){
             case .unknown: break
              //   proximityLabel.text = "unknown"
-            case .far: break
+            case .far:
               //  proximityLabel.text = "far"
-                
+                co = true
             case .near:
              //   proximityLabel.text = "near"
-                co = true
-            case .immediate:
-                //proximityLabel.text = "immediate"
+                
                 if let bea: MyBeacon = BeaconSevice.getLocationByBeacon(minorId: beacon.minor.intValue) {
-                 //   self.proximityLabel.text = bea.locationName
+                    self.beaconAtual = bea
+                    changeInterface(d:bea.direction,l: bea.locationName)
+                    //   self.proximityLabel.text = bea.locationName
                     if let audio: [String: String] =  bea.locationVoice {
                         if(co){
                             AudioService.Play(audio: audio[bea.direction]!)
-                            changeInterface(d:bea.direction,l: bea.locationName)
+                            
                             
                             co = false
                         }
                     }
-                    
                 }
+            case .immediate: break
+                //proximityLabel.text = "immediate"
+                
                 
             }
         //    print(beacon)
